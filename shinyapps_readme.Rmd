@@ -33,5 +33,5 @@ The aim of this application is to show case the relation between miles per galon
 # Dataset Used is mtcars
 
 ```{r}
-summary(mtcars)
+
 ```

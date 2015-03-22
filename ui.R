@@ -24,8 +24,8 @@ shinyUI(fluidPage(
       radioButtons(inputId="automanual", label="Auto/Manual", choices=c("Automatic","Manual")),
       selectInput(inputId="variable", label="variable", choices=colnames(mtcars)[2:length(colnames(mtcars))],
                   multiple = FALSE,selected="mpg"),
-      p(strong(em("Documentation:",a("Effect of different variables on mileage and Transmission of car",href="shinyapps_readme.html")))),
-      p(strong(em("Github repository:",a("Developing Data Products - Peer Assessment Project; Shiny App",href="https://github.com/Mylcat/mtcars_mpgvsaut"))))
+      p(strong(em("Github repository:",a("Developing Data Products - Peer Assessment Project; Shiny App",href="https://github.com/Mylcat/mtcars_mpgvsaut")))),
+      includeHTML("shinyapps_readme.html")
     ),
     
     mainPanel(
@@ -34,5 +34,6 @@ shinyUI(fluidPage(
       verbatimTextOutput("summarymtcarval"),
       plotOutput("distPlot")
     )
+    
   )
 ))
