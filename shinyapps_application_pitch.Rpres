@@ -1,0 +1,23 @@
+Effect of different variables on miles/galon and transmission
+========================================================
+author: Lakshmi Narayana
+date: 22 March 2015
+
+Objective
+========================================================
+
+The aim of this application is to show case the relation between miles per galon and transmission to the other variables of mtcars dataset***mtcars dataset***.
+
+Slide With Code
+========================================================
+
+```{r}
+summary(cars)
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
